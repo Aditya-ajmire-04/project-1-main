@@ -4,18 +4,12 @@
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange.svg)
 ![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-yellow.svg)
 ![GitHub](https://img.shields.io/badge/GitHub-Version_Control-lightgrey.svg)
-
-## 🌟 Project Overview
-
-This project focuses on designing and implementing a fully automated infrastructure deployment process using Terraform to enhance Cisco’s B2B discounting framework. The goal is to streamline the deployment process, ensuring scalability, security, and high availability for the discounting application integrated into Cisco's guided selling platform.
-
----
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## 📋 Table of Contents
 
 - [Objectives](#objectives)
 - [Technologies and Tools Used](#technologies-and-tools-used)
-- [Project Workflow](#project-workflow)
 - [Impact and Achievements](#impact-and-achievements)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
@@ -40,28 +34,6 @@ This project focuses on designing and implementing a fully automated infrastruct
 - **Version Control:** GitHub
 - **Cloud Services:** AWS (VPC, EC2, Subnets, ELB, S3, DynamoDB)
 - **DevOps Practices:** Infrastructure as Code (IaC), Continuous Integration (CI), Continuous Deployment (CD)
-
----
-
-## 🔄 Project Workflow
-
-```mermaid
-graph TD;
-    A[Code Commit] -->|Trigger| B[Jenkins Build];
-    B --> C[Terraform Init];
-    C --> D[Terraform Plan];
-    D --> E[Terraform Apply];
-    E --> F[AWS Infrastructure Provisioned];
-    F --> G[Monitoring & Logging];
-    G -->|Alerts| H[DevOps Team];
-    G -->|Logs| I[Compliance Check];
-```
-
-1. **Code Management:** Infrastructure code is managed in a GitHub repository.
-2. **CI/CD Pipeline:** Jenkins monitors the repository and triggers builds for any changes.
-3. **Terraform Execution:** Jenkins executes Terraform scripts to provision and manage AWS resources.
-4. **State Management:** Terraform state files are stored in S3 and locked using DynamoDB to prevent concurrent modifications.
-5. **Resource Provisioning:** AWS resources (VPC, EC2, subnets, ELB) are created and configured as per the Terraform scripts.
 
 ---
 
