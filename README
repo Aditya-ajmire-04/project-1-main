@@ -1,103 +1,73 @@
-# 🚀 Automated Infrastructure Deployment for B2B Discounting Framework using Terraform
+# Automated Infrastructure Deployment for B2B Discounting Framework using Terraform
 
-![Terraform](https://img.shields.io/badge/Terraform-v0.12-blue.svg)
-![AWS](https://img.shields.io/badge/AWS-Cloud-orange.svg)
-![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-yellow.svg)
-![GitHub](https://img.shields.io/badge/GitHub-Version_Control-lightgrey.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+## Overview
 
-## 📋 Table of Contents
+This repository contains the code and configuration for automating the infrastructure deployment of Cisco’s B2B discounting framework using Terraform. The goal is to enhance scalability, reliability, and security while integrating continuous deployment practices.
 
-- [Objectives](#objectives)
-- [Technologies and Tools Used](#technologies-and-tools-used)
-- [Impact and Achievements](#impact-and-achievements)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## Objectives
 
----
+- **Automate Infrastructure Deployment:** Utilize Terraform for Infrastructure as Code (IaC) to automate AWS resource provisioning.
+- **Enhance Scalability and Reliability:** Develop a highly available and scalable infrastructure to support the discounting framework.
+- **Implement CI/CD Pipeline:** Set up a continuous integration and deployment pipeline to streamline updates and deployments.
+- **Ensure Security and Compliance:** Apply best practices for infrastructure security and compliance.
 
-## 🎯 Objectives
+## Technologies and Tools
 
-1. **Automate Infrastructure Deployment:** Implement Infrastructure as Code (IaC) to automate the provisioning of AWS resources.
-2. **Enhance Scalability and Reliability:** Design a scalable and highly available infrastructure to support the discounting framework.
-3. **Implement CI/CD Pipeline:** Integrate continuous integration and continuous deployment practices to ensure seamless updates and deployments.
-4. **Ensure Security and Compliance:** Follow best practices for securing infrastructure and ensuring compliance with organizational policies.
+- **Terraform:** Infrastructure as Code (IaC) tool for provisioning and managing cloud resources.
+- **Jenkins:** CI/CD tool for automating the build and deployment processes.
+- **AWS:** Cloud services used for infrastructure components (VPC, EC2, Subnets, ELB, S3, DynamoDB).
+- **GitHub:** Version control platform for code management and collaboration.
 
----
+## Key Features
 
-## 🛠️ Technologies and Tools Used
+- **Automated Provisioning:** Scripts to automatically create and manage AWS resources.
+- **Modular Design:** Terraform modules for reusable and maintainable infrastructure code.
+- **CI/CD Integration:** Jenkins pipeline for automated testing and deployment.
+- **State Management:** Secure storage of Terraform state files using S3 and DynamoDB for state locking.
 
-- **Programming Languages:** Terraform (HCL)
-- **CI/CD Tools:** Jenkins
-- **Version Control:** GitHub
-- **Cloud Services:** AWS (VPC, EC2, Subnets, ELB, S3, DynamoDB)
-- **DevOps Practices:** Infrastructure as Code (IaC), Continuous Integration (CI), Continuous Deployment (CD)
-
----
-
-## 🌟 Impact and Achievements
-
-- **Enhanced Efficiency:** Reduced deployment times from days to minutes through automation.
-- **Scalability:** Enabled seamless scaling of the discounting application to handle increasing load and demand.
-- **Reliability:** Achieved high availability and fault tolerance with ELB and properly configured subnets.
-- **Security:** Ensured secure infrastructure provisioning with strict IAM policies and automated state management.
-- **Consistency:** Maintained consistent and reproducible infrastructure deployments with Terraform's state management and version control.
-
----
-
-## 🚀 Getting Started
-
-To get a local copy up and running follow these simple steps:
+## Getting Started
 
 ### Prerequisites
 
-- Install Terraform: [Terraform Installation Guide](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-- Install Jenkins: [Jenkins Installation Guide](https://www.jenkins.io/doc/book/installing/)
-- AWS Account with appropriate permissions.
+- **Terraform:** [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+- **Jenkins:** [Install Jenkins](https://www.jenkins.io/doc/book/installing/)
+- **AWS Account:** Ensure you have appropriate permissions and credentials.
 
-### Installation
+### Installation Steps
 
-1. Clone the repository:
+1. **Clone the Repository:**
     ```sh
     git clone https://github.com/your-username/your-repo.git
     cd your-repo
     ```
 
-2. Initialize Terraform:
+2. **Initialize Terraform:**
     ```sh
     terraform init
     ```
 
-3. Plan and apply the infrastructure:
+3. **Apply Configuration:**
     ```sh
     terraform plan
     terraform apply
     ```
 
----
+## Usage
 
-## 📚 Usage
+1. **Update Terraform Scripts:** Modify scripts as required for your infrastructure needs.
+2. **Push Changes:** Commit and push changes to GitHub to trigger the CI/CD pipeline.
+3. **Monitor Deployment:** Track the Jenkins pipeline and AWS resources to ensure successful deployment.
 
-1. Update the Terraform scripts as needed for your infrastructure.
-2. Push changes to the GitHub repository to trigger the CI/CD pipeline.
-3. Monitor the Jenkins pipeline and AWS infrastructure for successful deployment.
+## Contributing
 
----
+We welcome contributions to improve this project. Please follow these steps to contribute:
 
-## 🤝 Contributing
+1. **Fork the Repository**
+2. **Create a Feature Branch:** `git checkout -b feature/your-feature`
+3. **Commit Changes:** `git commit -m 'Add your feature'`
+4. **Push to the Branch:** `git push origin feature/your-feature`
+5. **Open a Pull Request**
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+## License
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for more details.
