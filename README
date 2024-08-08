@@ -1,7 +1,3 @@
-Certainly! Here's a professional and visually appealing README file designed to make your GitHub repository stand out. It includes badges, a project workflow diagram, and detailed sections, all presented in a clean and modern layout.
-
----
-
 # 🚀 Automated Infrastructure Deployment for B2B Discounting Framework using Terraform
 
 ![Terraform](https://img.shields.io/badge/Terraform-v0.12-blue.svg)
@@ -133,7 +129,3 @@ Contributions are what make the open source community such an amazing place to l
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
----
-
-This README template is designed to be visually appealing and easy to navigate, making your GitHub repository look professional and unique.
